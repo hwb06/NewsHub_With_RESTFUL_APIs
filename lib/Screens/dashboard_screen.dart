@@ -51,52 +51,46 @@ class _DashboardScreenState extends State<DashboardScreen> {
           PopupMenuButton<FilterList>(
             initialValue: selectedMenu,
               icon: Icon(Icons.more_vert, color: Colors.black,),
-              onSelected: (FilterList item){
-              if(FilterList.bbcNews.name == item.name){
+            onSelected: (FilterList item) {
+              if (item == FilterList.bbcNews) {
                 name = 'bbc-news';
-              }
-              if(FilterList.bbcNews.name == item.name){
+              } else if (item == FilterList.aryNews) {
                 name = 'ary-news';
-              }
-              if(FilterList.alJazeera.name == item.name){
+              } else if (item == FilterList.alJazeera) {
                 name = 'al-jazeera-english';
-              }
-              if(FilterList.cnn.name == item.name){
+              } else if (item == FilterList.cnn) {
                 name = 'cnn';
-              }
-              if(FilterList.independent.name == item.name){
+              } else if (item == FilterList.independent) {
                 name = 'independent';
-              }
-              if(FilterList.reuters.name == item.name){
+              } else if (item == FilterList.reuters) {
                 name = 'reuters';
               }
-              setState(() {
-              });
+              setState(() {});
+            },
 
-              },
               itemBuilder: (BuildContext context) => <PopupMenuEntry<FilterList>> [
                 PopupMenuItem<FilterList>(
                   value: FilterList.bbcNews,
                   child: Text("BBC News"),
                 ),
                 PopupMenuItem<FilterList>(
-                  value: FilterList.bbcNews,
+                  value: FilterList.aryNews,
                   child: Text("Ary News"),
                 ),
                 PopupMenuItem<FilterList>(
-                  value: FilterList.bbcNews,
+                  value: FilterList.independent,
                   child: Text("Independent News"),
                 ),
                 PopupMenuItem<FilterList>(
-                  value: FilterList.bbcNews,
+                  value: FilterList.reuters,
                   child: Text("Reuters News"),
                 ),
                 PopupMenuItem<FilterList>(
-                  value: FilterList.bbcNews,
+                  value: FilterList.cnn,
                   child: Text("CNN News"),
                 ),
                 PopupMenuItem<FilterList>(
-                  value: FilterList.bbcNews,
+                  value: FilterList.alJazeera,
                   child: Text("Aljazeera News"),
                 ),
               ],
@@ -110,7 +104,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             height: height * .55,
             width: width,
             child: FutureBuilder<NewsChannelsHeadlinesModel>(
-              future: newsViewModel.fetchNewsChannelHeadlinesApi(),
+              future: newsViewModel.fetchNewsChannelHeadlinesApi(name),
               builder: (BuildContext context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return const Center(
