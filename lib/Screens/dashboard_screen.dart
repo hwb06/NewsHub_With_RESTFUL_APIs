@@ -12,10 +12,16 @@ class DashboardScreen extends StatefulWidget {
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
 
+//Fiters of news channels
+enum FilterList {bbcNews, aryNews, independent, reuters, cnn, alJazeera}
+
 class _DashboardScreenState extends State<DashboardScreen> {
   NewsViewModel newsViewModel = NewsViewModel();
 
+  FilterList? selectedMenu;
   final format = DateFormat('MMMM dd, yyyy ');
+
+  String name = "bbc-news";
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +47,61 @@ class _DashboardScreenState extends State<DashboardScreen> {
             fontWeight: FontWeight.w700,
           ),
         ),
+        actions: [
+          PopupMenuButton<FilterList>(
+            initialValue: selectedMenu,
+              icon: Icon(Icons.more_vert, color: Colors.black,),
+              onSelected: (FilterList item){
+              if(FilterList.bbcNews.name == item.name){
+                name = 'bbc-news';
+              }
+              if(FilterList.bbcNews.name == item.name){
+                name = 'ary-news';
+              }
+              if(FilterList.alJazeera.name == item.name){
+                name = 'al-jazeera-english';
+              }
+              if(FilterList.cnn.name == item.name){
+                name = 'cnn';
+              }
+              if(FilterList.independent.name == item.name){
+                name = 'independent';
+              }
+              if(FilterList.reuters.name == item.name){
+                name = 'reuters';
+              }
+              setState(() {
+              });
+
+              },
+              itemBuilder: (BuildContext context) => <PopupMenuEntry<FilterList>> [
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("BBC News"),
+                ),
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("Ary News"),
+                ),
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("Independent News"),
+                ),
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("Reuters News"),
+                ),
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("CNN News"),
+                ),
+                PopupMenuItem<FilterList>(
+                  value: FilterList.bbcNews,
+                  child: Text("Aljazeera News"),
+                ),
+              ],
+          ),
+        ],
         centerTitle: true,
       ),
       body: ListView(
