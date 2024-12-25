@@ -4,7 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
 class NewsDetailScreen extends StatefulWidget {
-  final String newImage, newsTitle, newsData, author, description, content, source;
+  final String newImage,
+      newsTitle,
+      newsData,
+      author,
+      description,
+      content,
+      source;
 
   const NewsDetailScreen({
     Key? key,
@@ -22,7 +28,7 @@ class NewsDetailScreen extends StatefulWidget {
 }
 
 class _NewsDetailScreenState extends State<NewsDetailScreen> {
-  final format = DateFormat('h') ;
+  final format = DateFormat('h');
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +98,8 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(20),
@@ -158,8 +165,7 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                         radius: 20,
                         backgroundColor: Colors.grey[200],
                         backgroundImage: NetworkImage(
-                            'https://logo.clearbit.com/${widget.source.toLowerCase().replaceAll(" ", "")}.com'
-                        ),
+                            'https://logo.clearbit.com/${widget.source.toLowerCase().replaceAll(" ", "")}.com'),
                       ),
                       SizedBox(width: 12),
                       Column(
@@ -174,7 +180,8 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                           ),
                           Row(
                             children: [
-                              Icon(Icons.check_circle,
+                              Icon(
+                                Icons.check_circle,
                                 color: Colors.blue,
                                 size: 14,
                               ),

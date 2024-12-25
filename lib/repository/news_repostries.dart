@@ -6,8 +6,10 @@ import '../Models/categories_news_model.dart';
 import '../Models/news_channels_headlines_model.dart';
 
 class NewsRepository {
-  Future<NewsChannelsHeadlinesModel> fetchNewsChannelsHeadlineApi(String name) async {
-    String url = "https://newsapi.org/v2/top-headlines?sources=$name&apiKey=0e6edb4b702f4f2db337f7e3604919a0";
+  Future<NewsChannelsHeadlinesModel> fetchNewsChannelsHeadlineApi(
+      String name) async {
+    String url =
+        "https://newsapi.org/v2/top-headlines?sources=$name&apiKey=0e6edb4b702f4f2db337f7e3604919a0";
 
     try {
       final response = await http.get(Uri.parse(url));
@@ -23,7 +25,8 @@ class NewsRepository {
   }
 
   Future<CategoriesNewsModel> fetchCategoriesNewsApi(String category) async {
-    String url = "https://newsapi.org/v2/everything?q=${category}&apiKey=0e6edb4b702f4f2db337f7e3604919a0";
+    String url =
+        "https://newsapi.org/v2/everything?q=${category}&apiKey=0e6edb4b702f4f2db337f7e3604919a0";
 
     try {
       final response = await http.get(Uri.parse(url));

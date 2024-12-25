@@ -59,8 +59,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     color: Colors.grey[600],
                   ),
                 ),
-                SizedBox(height: 20),
-                // Search Bar
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[100],
@@ -127,7 +125,8 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     itemCount: snapshot.data!.articles!.length,
                     itemBuilder: (context, index) {
                       var article = snapshot.data!.articles![index];
-                      DateTime dateTime = DateTime.parse(article.publishedAt ?? '');
+                      DateTime dateTime =
+                          DateTime.parse(article.publishedAt ?? '');
 
                       return Container(
                         margin: EdgeInsets.only(bottom: 20),
@@ -141,18 +140,16 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                                 height: 100,
                                 width: 100,
                                 fit: BoxFit.cover,
-                                placeholder: (context, url) =>
-                                    Container(
-                                      color: Colors.grey[300],
-                                      child: Center(
-                                        child: CircularProgressIndicator(),
-                                      ),
-                                    ),
-                                errorWidget: (context, url, error) =>
-                                    Container(
-                                      color: Colors.grey[300],
-                                      child: Icon(Icons.error),
-                                    ),
+                                placeholder: (context, url) => Container(
+                                  color: Colors.grey[300],
+                                  child: Center(
+                                    child: CircularProgressIndicator(),
+                                  ),
+                                ),
+                                errorWidget: (context, url, error) => Container(
+                                  color: Colors.grey[300],
+                                  child: Icon(Icons.error),
+                                ),
                               ),
                             ),
                             SizedBox(width: 12),
