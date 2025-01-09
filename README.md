@@ -1,16 +1,44 @@
-# news_app_with_apis
+# NewsHub_With_RESTFUL_APIs
 
-A new Flutter project.
+## **Project Description**
+🌐 **Rᴇᴀʟ-Tɪᴍᴇ Iɴꜱɪɢʜᴛꜱ ᴡɪᴛʜ NᴇᴡsHub!🚀📱**  
 
-## Getting Started
+♥ Iɴᴛʀᴏᴅᴜᴄɪɴɢ NᴇᴡsHᴜʙ – a cutting-edge news platform where ʀᴇᴀʟ-ᴛɪᴍᴇ ᴅᴀᴛᴀ is fetched through 𝐑𝐄𝐒𝐓𝐟𝐮𝐥 𝐀𝐏𝐈𝐬 and displayed instantly on your screen. Stay ahead with every update, right when it happens!  
 
-This project is a starting point for a Flutter application.
+## ♥ **Kᴇʏ Fᴇᴀᴛᴜʀᴇꜱ**:
+- **Real-Time Updates** from reliable sources  
+- **Categorized News** (Politics, Sports, World & more!)  
+- **Breaking Alerts** delivered instantly  
+- **Custom Feeds** tailored to your interests  
+- **Search & Bookmark** for quick access
+ 
+## ♥ **Bᴜɪʟᴛ Wɪᴛʜ**:
+- Flutter & Dart for sleek, cross-platform functionality. 
+- RESTful API Integration for dynamic, live updates. 
+- Firebase Backend for secure data management.
 
-A few resources to get you started if this is your first Flutter project:
+## ♥ **Cᴏᴍɪɴɢ Sᴏᴏɴ**:
+Push notifications, offline mode, dark mode, and social sharing!  
+- Your news, as it happens. Welcome to the future of real-time media with NᴇᴡsHᴜʙ 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ♥ **Hᴀsʜᴛᴀɢs**:
+#NewsHub #RealTimeUpdates #RESTfulAPIs #MobileInnovation #FlutterDev #BreakingNews #AppDev #MobileApp #CleanUI #UserExperience #AndroidApp #AppDesign #ModernUI #DeveloperTools #TechStack #LinkedIn #Dart #Flutter
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## **App UIs Screenshots**
+Here are some screenshots of the app:
+
+![Splash Screen](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/Splash%20Screen.JPG?raw=true)  
+![Main Dashboard](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/Dashboard%20UI.JPG?raw=true)  
+![categories Screen](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/categories%20Ui.JPG?raw=true)  
+![news details Screen](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/news%20detail%20ui.JPG?raw=true)  
+
+### **App Demo**
+You can download and view the demo video of the app here:
+
+[NewsHub_With_RESTFUL_APIs Link](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/releases/tag/v1.0.0)
+
+## **Contact Information**
+If you have any questions or feedback, feel free to reach out:
+
+- Email: hussnainwaheed864@gmail.com
+- GitHub: [@hwb06](https://github.com/hwb06)
