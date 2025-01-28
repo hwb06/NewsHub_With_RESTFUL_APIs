@@ -27,8 +27,8 @@ Push notifications, offline mode, dark mode, and social sharing!
 ## **App UIs Screenshots**
 Here are some screenshots of the app:
 
-![#01](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/01.png)  
-![#02](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/App_UI_Screens/02.png)  
+![#01](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/assets/Project%20Showcase/01.png)  
+![#02](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/blob/main/assets/Project%20Showcase/02.png)  
 
 ### **App Demo**
 You can download and view the demo video of the app here:
