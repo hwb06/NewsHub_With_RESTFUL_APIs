@@ -33,7 +33,7 @@ Here are some screenshots of the app:
 ### **App Demo**
 You can download and view the demo video of the app here:
 
-[NewsHub_With_RESTFUL_APIs Link](https://github.com/hwb06/NewsHub_With_RESTFUL_APIs/releases/tag/v1.0.0)
+[NewsHub_With_RESTFUL_APIs Link](https://www.dropbox.com/scl/fi/gh6x5x4911px6tyf74zee/NewsHub-Demo.mp4?rlkey=xl8f0cgz49f1em1ahk1mwdkto&st=15f4uajr&dl=0)
 
 ## **Contact Information**
 If you have any questions or feedback, feel free to reach out:
